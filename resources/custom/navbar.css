@@ -1,0 +1,108 @@
+
+
+/*      **********************************     */
+/*      *****  Mobile Specific View  *****     */
+/*      **********************************     */
+.menu-right{
+    padding-right: 0;
+    margin-left: 0!important;
+    display: flex;
+    flex-direction: row-reverse!important;
+}
+.menu-left{
+    order: 2;
+    align-items: center;
+    text-align-last: center;
+}
+.searchbtn{
+    position: absolute;
+    right: 13%;
+}
+.usermenu{
+    position: absolute!important;
+    right: 10%;
+}
+.cart{
+    padding: 16px 8px!important;
+}
+.user{
+    padding: 8px!important;
+}
+.main-item{
+    width: 100%;
+}
+.searchenter{
+    border-color: #df0024!important;
+    color: #df0024!important;
+}
+.searchenter:hover{
+    border-color: #df0024!important;
+    color: white!important;
+    background-color: #df0024!important;
+}
+li.nav-item.active.main-item{
+    background-color: #df0b2e;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav, .navbar-light .navbar-nav {
+    color: white!important;
+}
+a.navbar-brand,.cart,.usericon{
+    color: #df0024!important;
+}
+.aboutmenu{
+    margin: 0!important;
+    padding: 0!important;
+}
+/*      **********************************     */
+/*      *****  Tablet Specific View  *****     */
+/*      **********************************     */
+
+@media (min-width: 992px){
+    .menu-right{
+        order: 2;
+        display: inline-block;
+    }
+    .menu-left{
+        order: 1;
+        height: -webkit-fill-available;
+        align-content: space-around;
+        width: 43%;
+    }
+    input.searchinput{
+        display: none!important;
+    }
+    .searchbtn:hover input.searchinput{
+        display: block!important;
+    }
+    .searchbtn{
+        position: absolute;
+        right: 8%;
+        padding: 8px;
+    }
+    .usermenu{
+        position: absolute!important;
+        right: 10%;
+    }
+    .user:hover .usermenu{
+        display: block;
+    }
+    .aboutdrop:hover .aboutmenu{
+        display: block;
+    }
+    .main-item{
+        padding: 5px 15px!important;
+        width: 33%;
+    }
+    .main-item:hover{
+        background-color: #f7072f;
+    }
+    .main-item .active a:not(.dropdown-item){
+        color: white!important;
+    }
+    .main-item:hover a:not(.dropdown-item){
+        color: white!important;
+    }
+    nav{
+        height: 50px;
+    }
+}
